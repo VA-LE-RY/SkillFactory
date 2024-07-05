@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex6.10.4</title>
+</head>
+<body>
+    
+<script>
+const userName = prompt("Введите Ваше имя!");
+let userAge = prompt("Введите год Вашего рождения!");
+userAge = 2024 - userAge;
+let userOld = userAge % 10;
+if(userOld === 1) {
+    alert(`${userName}:${userAge}год`);
+}else if(userOld > 1 && userOld < 5) {
+    alert(`${userName}:${userAge}года`);
+}else if(userOld >= 5){
+    alert(`${userName}:${userAge}лет`);
+}else {
+    alert('Год не число или пустое имя!');
+}
+</script>
+</body>
+</html>

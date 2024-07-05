@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex6.10.5</title>
+</head>
+<body>
+
+<script>
+let userAge = prompt("Для полученя кредита введите Ваш возраст!");
+let creditSum = '';
+if(isNaN(+userAge)) {
+    alert("Видимо Вам кредит не нужен, всего доброго!");
+}
+if(userAge < 18) {
+    alert("Извините, мы не можем выдать Вам кредит!");
+}
+if(userAge >= 18 && userAge <= 21) {
+    creditSum = prompt("Мы можем выдать Вам максимум 50000.\nВведите сумму кратную 1000.");
+    if(creditSum % 1000 === 0) {
+        alert(`С Вами свяжуться для согласования оформления кредита на сумму ${creditSum}!`);
+    }else {
+        alert(`Вы ввели сумму не кратную 1000. Мы можем выдать Вам кредит на сумму ${creditSum - creditSum % 1000}!`);
+    }
+}
+if(userAge >= 22 && userAge <= 35){
+    prompt("Мы можем выдать Вам максимум 400000.\nВведите сумму кратную 1000.");
+}
+if(userAge >= 36 && userAge <= 65){
+    prompt("Мы можем выдать Вам максимум 1000000.\nВведите сумму кратную 1000.");
+};
+</script>
+</body>
+</html>
