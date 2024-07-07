@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.7.3</title>
+</head>
+<body>
+    <script>
+    const users = [
+        { name: "Оливок Рен", age: 16 },
+        { name: "Фикус Прямостоящий", age: 31 },
+        { name: "Лорд Помпельмус", age: 18 }
+    ]
+    const filteredUsers = users.filter((user) => {
+        return user.age >= 18;
+    });
+    console.log(filteredUsers);
+    const filteredUsersNames = users.map((user) => {
+        return user.name;
+    });
+    console.log(filteredUsersNames);
+    </script>
+</body>
+</html>

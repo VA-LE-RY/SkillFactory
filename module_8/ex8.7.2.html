@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.7.2</title>
+</head>
+<body>
+    <script>
+    function calculate(a, b, operator) {
+        if (operator === '+') {
+            return a + b;
+        } else if (operator === '_') {
+            return a - b;
+        } else if (operator === '*') {
+            return a * b;
+        } else if (operator === '/') {
+          return a / b;
+        }
+    }
+    const arr = [2, 3, '+']
+    calculate.apply(null, arr);
+    </script>
+</body>
+</html>

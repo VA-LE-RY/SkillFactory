@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.7.5</title>
+</head>
+<body>
+    <script>
+        const arr = [1, 2, 3, 2, 3, 4, 5, 6, 5, 6, 8, 7, 9, 2, 3, 4, 4, 7, 6, 5]
+        function newArr(arr) {
+            return new Set(arr.sort((a, b) => a - b));
+        }
+        const uniqueNewArr = Array.from(newArr(arr));
+        console.log(uniqueNewArr);
+    </script>
+</body>
+</html>
