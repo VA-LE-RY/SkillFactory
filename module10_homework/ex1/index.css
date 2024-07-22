@@ -1,0 +1,32 @@
+.div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn {
+    width: 150px;
+    height: 100px;
+    background-color: azure;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn__svg--two{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

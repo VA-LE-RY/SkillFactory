@@ -1,0 +1,19 @@
+.btn-div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(42, 80, 120);
+    color: white;
+    border: 1px solid rgb(126, 186, 168);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
